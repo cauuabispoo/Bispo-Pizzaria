@@ -1,0 +1,33 @@
+/*Escolhendo a fonte de toda a pagina e ajustando a borda para nenhuma*/
+body{
+    font-family: "Arial";
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: center;
+}
+/*Escolhendo a cor e a distancia do logo ate o final do header*/
+header{
+    background-color: rgb(27, 25, 25);
+    padding: 20px;
+}
+.titulo-pizza{
+    text-align: center;
+    clear:left;
+    font-size: 2em;
+}
+
+.encomendas{
+    text-align: center;
+}
+
+.tabela-encomendas{
+    text-align: center;
+    display: inline-block;
+}
+
+.marcacao{
+    background-color: rgb(219, 216, 216);
+    font-weight: bold;
+    font-size: 150%;
+}
