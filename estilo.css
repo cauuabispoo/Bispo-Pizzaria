@@ -8,8 +8,11 @@ body{
 }
 /*Escolhendo a cor e a distancia do logo ate o final do header*/
 header{
-    background-color: rgb(27, 25, 25);
-    padding: 20px;
+    background-color: #A20F0F;
+    padding: 0;
+}
+.logo{
+    height: 25%;
 }
 .titulo-pizza{
     text-align: center;
