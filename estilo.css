@@ -27,6 +27,7 @@ header{
 .tabela-encomendas{
     text-align: center;
     display: inline-block;
+    border-collapse: collapse;
 }
 
 .marcacao{
