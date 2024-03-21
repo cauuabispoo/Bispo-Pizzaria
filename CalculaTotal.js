@@ -48,7 +48,7 @@ function Imprimir() {
     linha2.textContent = prod;
     linha3.textContent = quant;
     linha4.textContent = ValorU;
-    
+
     if (validaValor(ValorU) == false && validaQtde(quant) == false) {
         linha4.textContent = "VALOR INVÁLIDO!";
         linha4.style.backgroundColor = "red";
@@ -65,7 +65,7 @@ function Imprimir() {
         linha4.textContent = formatacao(parseFloat(ValorU));
         linha5.textContent = formatacao(calculaTotal(quant, ValorU));
     }
-
+   
     }
 
 // Valida a Quantidade
