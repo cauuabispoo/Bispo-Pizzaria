@@ -25,7 +25,48 @@ geral.forEach(function(geral) {
         // Calcula o valor total da encomenda
         geral.querySelector(".total").textContent = formatacao(calculaTotal(qtde, unitario));
     }
+
 });
+
+function Imprimir() {
+    var Tabela = document.querySelector(".tabela-encomendas");
+    var linha = Tabela.insertRow();
+
+    var linha1 = linha.insertCell(0);
+    var linha2 = linha.insertCell(1);
+    var linha3 = linha.insertCell(2);
+    var linha4 = linha.insertCell(3);
+    var linha5 = linha.insertCell(4);
+
+    var nome = document.getElementById("nome").value;
+    var prod = document.getElementById("pizza").value;
+    var quant = document.getElementById("qnt").value;
+    var ValorU = document.getElementById("ValorU").value;
+    var Total = document.querySelector(".total").value;
+    
+    linha1.textContent = nome;
+    linha2.textContent = prod;
+    linha3.textContent = quant;
+    linha4.textContent = ValorU;
+    
+    if (validaValor(ValorU) == false && validaQtde(quant) == false) {
+        linha4.textContent = "VALOR INVÁLIDO!";
+        linha4.style.backgroundColor = "red";
+
+        linha3.textContent = "QTDE INVÁLIDA!";
+        linha3.style.color = "red";
+    } else if (validaQtde(quant) == false) {
+        linha3.textContent = "QTDE INVÁLIDA!";
+        linha3.style.color = "red";
+    } else if (validaValor(ValorU) == false) {
+        linha4.textContent = "VALOR INVÁLIDO!";
+        linha4.style.backgroundColor = "red";
+    } else {
+        linha4.textContent = formatacao(parseFloat(ValorU));
+        linha5.textContent = formatacao(calculaTotal(quant, ValorU));
+    }
+
+    }
 
 // Valida a Quantidade
 function validaQtde(qtde){

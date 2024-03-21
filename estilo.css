@@ -35,3 +35,21 @@ header{
     font-weight: bold;
     font-size: 150%;
 }
+.ne{
+    padding-left: 600;    
+    padding-right: 600;
+}
+
+.botao{
+    background-color: #A20F0F;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    width: 50%;
+    height: 10%;
+    font-size: large;
+}
+.botao:hover{
+    transform-origin: left;
+    background-color: black;
+}
