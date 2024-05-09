@@ -14,31 +14,28 @@
         </header>
         
         <main>
+            <h1 class="titulo-pizza" >Encomendas</h1> <!--onclick="this.innerHTML='PIZZA!!!!'" -->
             <section class="Encomendas">
-                <h1 class="titulo-pizza" >Encomendas</h1> <!--onclick="this.innerHTML='PIZZA!!!!'" -->
                 <table border="1" class="tabela-encomendas">
-                    <tr class="marcacao">
-                        <th>Nome</th>
-                        <th>Pizza</th>
-                        <th>Quantidade</th>
-                        <th>valor unitário</th>
-                        <th>Total</th>
-                    </tr>
+                    <thead class="marcacao">
+                        <tr>
+                            <th>Nome</th>
+                            <th>Pizza</th>
+                            <th>Quantidade</th>
+                            <th>valor unitário</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
 
-                    <tr class="geral">
-                        <td>Afonso</td>
-                        <td>Dois Queijos</td>
-                        <td class="qtd">2</td>
-                        <td class="valor">40</td>
-                        <td class="total"></td>
-                    </tr>
-                    <tr class="geral">
-                        <td>Matheus</td>
-                        <td>Mussarela</td>
-                        <td class="qtd">2</td>
-                        <td class="valor">40</td>
-                        <td class="total"></td>
-                    </tr>
+                    <tbody class="geral">
+                        <tr>
+                            <td>Afonso</td>
+                            <td>Dois Queijos</td>
+                            <td class="qtd">2</td>
+                            <td class="valor">40</td>
+                            <td class="total"></td>
+                        </tr>
+                    </tbody>
                 </table>
             </section>
 

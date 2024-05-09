@@ -6,7 +6,7 @@
 //     });
 // });
 
-var tabela = document.querySelector("table");
+var tabela = document.querySelector("tbody");
 
 tabela.addEventListener("dblclick", function(event){
     event.target.parentNode.classList.add("fadeOut");

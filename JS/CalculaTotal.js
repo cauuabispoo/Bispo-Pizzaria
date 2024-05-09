@@ -34,7 +34,7 @@ function Delete() {
 }
 
 function Imprimir() {
-    var Tabela = document.querySelector(".tabela-encomendas");
+    var Tabela = document.querySelector(".geral");
     var linha = Tabela.insertRow();
 
     var linha1 = linha.insertCell(0);
