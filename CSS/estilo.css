@@ -1,0 +1,71 @@
+/*Escolhendo a fonte de toda a pagina e ajustando a borda para nenhuma*/
+body{
+    font-family: "Arial";
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: center;
+}
+/*Escolhendo a cor e a distancia do logo ate o final do header*/
+header{
+    background-color: #A20F0F;
+    padding: 0;
+}
+.logo{
+    height: 25%;
+}
+.titulo-pizza{
+    text-align: center;
+    clear:left;
+    font-size: 2em;
+}
+
+.encomendas{
+    text-align: center;
+    align-items: center;
+}
+
+.tabela-encomendas{
+    text-align: center;
+    display: inline-block;
+    border-collapse: collapse;
+}
+
+.marcacao{
+    background-color: rgb(219, 216, 216);
+    font-weight: bold;
+    font-size: 150%;
+}
+.ne{
+    padding-left: 600;    
+    padding-right: 600;
+}
+
+.botao{
+    background-color: #A20F0F;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    width: 50%;
+    height: 10%;
+    font-size: large;
+}
+.botao:hover{
+    transform-origin: left;
+    background-color: black;
+}    
+
+.fadeOut{
+    opacity: 0;
+    transition: 1s;
+}
+
+#filtra-tabela{
+    width: 19.5%;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+.invisivel{
+    display: none;
+}

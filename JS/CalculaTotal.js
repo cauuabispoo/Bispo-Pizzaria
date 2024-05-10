@@ -34,7 +34,7 @@ function Delete() {
 }
 
 function Imprimir() {
-    var Tabela = document.querySelector(".geral");
+    var Tabela = document.querySelector(".clientes");
     var linha = Tabela.insertRow();
 
     var linha1 = linha.insertCell(0);
