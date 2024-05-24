@@ -28,47 +28,6 @@ geral.forEach(function(geral) {
 
 });
 
-function Delete() {
-
-
-}
-
-function Imprimir() {
-    var Tabela = document.querySelector(".clientes");
-    var linha = Tabela.insertRow();
-
-    var linha1 = linha.insertCell(0);
-    var linha2 = linha.insertCell(1);
-    var linha3 = linha.insertCell(2);
-    var linha4 = linha.insertCell(3);
-    var linha5 = linha.insertCell(4);
-
-    var nome = document.getElementById("nome").value;
-    var prod = document.getElementById("pizza").value;
-    var quant = document.getElementById("qnt").value;
-    var ValorU = document.getElementById("ValorU").value;
-
-    if (validaValor(ValorU) == false && validaQtde(quant) == false) {
-        linha4.textContent = "VALOR INVÁLIDO!";
-        linha4.style.backgroundColor = "red";
-
-        linha3.textContent = "QTDE INVÁLIDA!";
-        linha3.style.color = "red";
-    } else if (validaQtde(quant) == false) {
-        linha3.textContent = "QTDE INVÁLIDA!";
-        linha3.style.color = "red";
-    } else if (validaValor(ValorU) == false) {
-        linha4.textContent = "VALOR INVÁLIDO!";
-        linha4.style.backgroundColor = "red";
-    } else {
-        linha1.textContent = nome;
-        linha2.textContent = prod;
-        linha3.textContent = quant;
-        linha4.textContent = formatacao(parseFloat(ValorU));
-        linha5.textContent = formatacao(calculaTotal(quant, ValorU));
-    }
-   
-}
 
 // Valida a Quantidade
 function validaQtde(qtde){
@@ -94,9 +53,16 @@ function formatacao(valor){
     return valor.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
 }
 
+function formataValor(valor){
+
+    var valor = parseFloat(valor);
+
+    return valor.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
+}
+
 // Função para calcular o valor total da encomenda
 function calculaTotal(qtde, unitario) {
     var total = 0;
     total = qtde * unitario;
-    return total;
+    return formataValor(total);
 }

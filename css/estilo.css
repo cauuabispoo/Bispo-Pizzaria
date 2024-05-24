@@ -69,3 +69,17 @@ header{
 .invisivel{
     display: none;
 }
+
+.botao1{
+    background-color: #A20F0F;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    width: 10%;
+    height: 5%;
+    font-size: large;
+}
+.botao1:hover{
+    transform-origin: left;
+    background-color: black;
+}
