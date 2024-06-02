@@ -17,7 +17,7 @@
             <section class="Encomendas">
                 <h1 class="titulo-pizza" >Encomendas</h1> <!--onclick="this.innerHTML='PIZZA!!!!'" -->
                 <label for="filtrar-tabela">Filtrar:</label><br>
-                <input type="text" name="filtro" id="filtra-tabela" placeholder="Digite o nome do cliente"><br>
+                <input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do cliente"><br>
                 <table border="1" class="tabela-encomendas">
                     <thead class="marcacao">
                         <tr>
@@ -32,21 +32,21 @@
                     <tbody class="clientes" id="clientes">
                         <tr class="geral">
                             <td class="nome">Afonso</td>
-                            <td>Dois Queijos</td>
+                            <td class="pizza">Dois Queijos</td>
                             <td class="qtd">2</td>
                             <td class="valor">45</td>
                             <td class="total"></td>
                         </tr>
                         <tr class="geral">
                             <td class="nome">Matheus</td>
-                            <td>Mussarela</td>
+                            <td class="pizza">Mussarela</td>
                             <td class="qtd">1</td>
                             <td class="valor">45</td>
                             <td class="total"></td>
                         </tr>
                         <tr class="geral">
                             <td class="nome">Romulo</td>
-                            <td>Calabresa</td>
+                            <td class="pizza">Calabresa</td>
                             <td class="qtd">2</td>
                             <td class="valor">45</td>
                             <td class="total"></td>
@@ -64,7 +64,7 @@
                 <fieldset>
                     
                     <label for="nome">Nome:</label><br>
-                    <input type="text" id="nome" name="nome" required><br><br>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
                     
                     <label for="pizza">Escolha sua pizza:</label><br>
                     <select id="pizza" name="pizza" required>
@@ -77,7 +77,7 @@
                     </select><br><br>
         
                     <label for="quantidade">Quantidade:</label><br>
-                    <input type="number" id="quantidade" name="quantidade" required><br><br>
+                    <input type="number" id="quantidade" name="quantidade" placeholder="Digite a quantidade do produto" required><br><br>
         
                     <label for="valorU">Valor unitário:</label><br>
                     <input type="number" id="ValorU" name="ValorU" placeholder="Digite o valor unitário do produto" required><br><br>
