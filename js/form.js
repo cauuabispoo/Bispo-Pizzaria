@@ -58,7 +58,8 @@ function montaTR(novaEncomenda){
 
     var tr = document.createElement("tr");
 
-    tr.appendChild(montaTD(novaEncomenda.nome));
+    tr.classList.add("geral");
+    tr.appendChild(montaTD(novaEncomenda.nome)).classList.add("nome");
     tr.appendChild(montaTD(novaEncomenda.pizza));
     tr.appendChild(montaTD(novaEncomenda.quantidade));
     tr.appendChild(montaTD(formataValor(parseFloat(novaEncomenda.ValorU))));

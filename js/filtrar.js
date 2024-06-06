@@ -1,4 +1,4 @@
-var campoFiltro = document.querySelector("#filtrar-tabela");
+var campoFiltro = document.querySelector("#filtra-tabela");
 
 campoFiltro.addEventListener("input", function(){
     var clientes = document.querySelectorAll(".geral")
